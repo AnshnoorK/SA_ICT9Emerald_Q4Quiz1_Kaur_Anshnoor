@@ -1,0 +1,78 @@
+body {
+	  font-family: Arial, sans-serif; 
+	  text-align: center;
+	  margin: 50px;
+      background-image: url("jeremy-bishop-tqG48KOMKfY-unsplash.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;
+
+	  }
+h1 {font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive; color: #141163; font-size: 50px}
+
+h2 {font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive; color: floralwhite;}
+
+#description {
+		background-color: #064273;
+	    color: lightblue; 
+	    padding:20px;
+	    width: 60%;
+	    text-align: left;
+	    font-size: 11px;
+	    
+	    border: solid;
+	    border-color: white;
+	    display: inline-block;}
+
+#Cebu
+ 	
+ 	   	{background-color: #30b1ce;
+	    color: floralwhite; 
+	    padding:20px;
+	    width: 20%;
+	    text-align: left;
+	    font-size: 13.6px;
+	    
+	    border: solid;
+	    border-color: white; display: inline-block ;
+	    }
+ 
+ #Palawan
+ 	   	{background-color: #30b1ce;
+	    color: floralwhite; 
+	    padding:20px;
+	    width: 20%;
+	    text-align: left;
+	    font-size: 12.8px;
+	    
+	    border: solid;
+	    border-color: white; display: inline-block;
+	    }
+
+#ElNido
+ 	   	{background-color: #30b1ce;
+	    color: floralwhite; 
+	    padding:20px;
+	    width: 20%;
+	    text-align: left;
+	    font-size: 11.6px;
+	    
+	    border: solid;
+	    border-color: white; display: inline-block;
+	    }
+
+#reference
+
+{background-color:lightskyblue; text-align: center; padding: 10px; color: floralwhite;}
+
+
+
+
+
+
+
+
+
+
+
+
+
