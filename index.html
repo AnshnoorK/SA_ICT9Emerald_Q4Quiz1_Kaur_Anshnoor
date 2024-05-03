@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN">
+    <style>
+        .aa {
+            background-color: #EAD196;
+            width: 440px;
+            height: 700px;
+            margin: 100px auto;
+            border: 5px solid floralwhite;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #7D0A0A;">
+    <div class="aa">
+        <center><img style="width: 200px;" src="user.png"></center>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="email" class="form-label" style="color: #7D0A0A; font-family: serif; font-size: 30px;">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+            </div>
+            <div>
+                <label for="password" class="form-label" style="color: #7D0A0A; font-family: serif; font-size: 30px;">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            </div>
+
+            <br>
+            <div>
+                <button type="submit" class="btn btn-light" style=" background-color: #F3EDC8; width: 110px;margin-left: 80px;">Login</button>
+                <button type="button" class="btn btn-light" style=" background-color: #F3EDC8; width: 110px"  onclick="cancelLogin()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+       
+        document.getElementById("loginForm").addEventListener("submit", auth);
+
+        function auth(event) {
+            event.preventDefault();
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "ansh@gmail.com" && password === "2131") {
+                window.location.replace("mainpage.html");
+            } else if (email === "" || password === "") {
+                alert("Please enter both email and password.");
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+
+        function cancelLogin() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
